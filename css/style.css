@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background: url("../img/bg3.jpg");
+    /* background-size: 120vw 100vh; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: linear-gradient(rgb(1, 73, 1),rgb(138, 218, 26));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid greenyellow;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+    border-radius: 23px;
+
+
+      /* width: 90vw;
+    height: 92vh; */
+}
+#scoreBox{
+ position: absolute;
+ top: 9px;
+ right :200px;
+ font-size:35px;
+ font-weight: bold;
+ color: white;
+ border: 2px solid greenyellow;
+ border-radius:10px;
+ padding: 2px;
+}
+#hiscoreBox{
+ position: absolute;
+ top: 65px;
+ right :115px;
+ font-size:35px;
+ font-weight: bold;
+ color: white;
+ border: 2px solid greenyellow;
+ padding: 2px;
+ border-radius:10px
+}
+
+
+.head{
+background:linear-gradient(yellow, black);
+border: 2px solid black;
+border-radius:9px 9px 9px 9px;
+
+}
+.snake{
+    background: linear-gradient(rgb(4, 209, 4),black);
+    border: .25vmin solid greenyellow;
+    border-radius: 12px;
+}
+
+.food{
+    background:linear-gradient(yellow, rgb(135, 88, 0));
+    border: 2px solid greenyellow;
+    border-radius: 18px;
+}
